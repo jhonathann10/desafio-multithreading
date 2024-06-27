@@ -24,9 +24,6 @@ func main() {
 		case endereco := <-ch:
 			enderecoJSON := convert.ConvertToJSON(endereco)
 			fmt.Println(enderecoJSON)
-		case endereco := <-ch:
-			enderecoJSON := convert.ConvertToJSON(endereco)
-			fmt.Println(enderecoJSON)
 		case <-time.After(1 * time.Second):
 			fmt.Println("Timeout")
 		}
